@@ -7,7 +7,7 @@ def desktopCleaner():
     desktopDirectory = r"C:\Users\luszc\Desktop"
     movedFilesDirectory = r"C:\desktopCleaner"
     currentDateDirectory = os.path.join(movedFilesDirectory, datetime.date.today().isoformat())
-
+a
     if os.listdir(desktopDirectory):
         os.makedirs(currentDateDirectory, exist_ok=True)
         moveFilesFromDesktop(desktopDirectory, currentDateDirectory)
